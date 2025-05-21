@@ -1,0 +1,188 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/background%201.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes padding */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Darkens the background image slightly */
+    z-index: -1;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 500px; /* Adjust as needed */
+    background: transparent; /* Ensures no separate background is applied to the hero */
+    
+}
+
+#hero img {
+    height: 500px;
+    object-fit: contain;
+    width: 100%;
+   
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Adds a dark overlay */
+    z-index: 1;
+}
+
+#hero img {
+    position: relative;
+    z-index: 2;
+    
+}
+
+/* Carousel */
+.carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background with opacity */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    z-index: 2; /* Ensures the caption is above the image */
+}
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Navbar Styling */
+nav {
+    background: linear-gradient(to right, saddlebrown, #444); /* Subtle gradient */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white !important;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: saddlebrown;
+}
+
+/* Typography */
+h2, h4 {
+    color: white;  /* Updated to proper selectors */
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+footer h2, footer H4 {
+    color: saddlebrown;
+}
+
+/* Card Styling */
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds depth */
+    border-radius: 8px;
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.btn-custom {
+    background-color: saddlebrown;
+    color: white;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: saddlebrown;
+}
+
+/* Rating Styling */
+.rating {
+    font-size: 1.5em; /* Ensure the stars are of appropriate size */
+    color: rgb(255, 217, 0);
+    margin-top: 10px; /* Add some space between the description and rating */
+    display: inline-block;
+}
+
+/* Footer Styling */
+footer {
+    background-color: saddlebrown;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+   
+}
+
+footer a {
+    margin: 0 10px;
+    color: saddlebrown;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: burlywood;
+    text-decoration: underline;
+}
+
+.title{
+    color: #ffffff;
+}
+
+.h5{
+    color: white;
+}
+
+.white-heading {
+    color: white !important;
+}
+
+
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieFanatix</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link to Custom style.css -->
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background: linear-gradient(to right, saddlebrowm, #444);">
+        <a class="navbar-brand text-white" href="#">FoodieFanatix</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./review.html">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="text-center py-5" style="background-color: burlywood">
+        <div class="container">
+            <h2 class="display-4 text-dark text-white">Welcome to FoodieFanatix!</h2>
+            <p class="lead text-dark text-white">Join Claire, a passionate globetrotting foodie, on her quest for the world's most unforgettable flavours.
+
+            From sizzling street food to fine dining, sushi to spicy curries, Claire dishes out honest reviews, expert recommendations, and behind-the-scenes culinary stories.</p>
+            <p class="text-dark text-white">Discover hidden gems, savor bold flavours, and fuel your wanderlust and salivate one bite at a time.</p>
+        </div>
+    </section>
+    
+       <!-- Hero Section (Carousel) -->
+    <div id="hero" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#hero" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#hero" data-bs-slide-to="1"></li>
+            <li data-bs-target="#hero" data-bs-slide-to="2"></li>
+            <li data-bs-target="#hero" data-bs-slide-to="3"></li>
+            <li data-bs-target="#hero" data-bs-slide-to="4"></li>
+            <li data-bs-target="#hero" data-bs-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/world%20food%20map.jpg" alt="First review">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="h5">A World of Food</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/chai.jpg" alt="Second review">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="h5">A Cuppa Chai with Claire</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/paris%204.jpg" alt="Third review">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="h5">Claire falls in LOVE with Parisian Delicacies</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/Pakistani%20Tikka.jpg" alt="Fourth review">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="h5">Claire's Review of the Best Chicken Tikka in Pakistan</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/indian%20thali.jpg" alt="Fifth review">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="h5">Claire's Tray of Spices with a Thali in India</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/cold%20baklava.jpg" alt="Sixth review">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="h5">A Burst of Flavor - Cold Baklava in Istanbul</h5>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#hero" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#hero" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-center py-4 text-white">
+        <p>&copy; 2023 FoodieFanatix | All rights reserved</p>
+        <div>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- Link to Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
